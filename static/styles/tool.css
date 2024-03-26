@@ -1,0 +1,16 @@
+/* styles.css */
+.grid-demo, .grid-demo-bg1 {
+  display: flex; /* 使用Flexbox布局 */
+  align-items: center; /* 竖直居中 */
+  justify-content: center; /* 水平居中 */
+  text-align: center; /* 确保文本水平居中 */
+  background-color: #16b777; /* 浅灰色背景 */
+  border: 1px solid #dcdcdc; /* 灰色边框 */
+  padding: 10px; /* 内边距 */
+  height: 50px; /* 调整高度为 50 像素 */
+  color: white; /* 文本颜色，根据背景色调整 */
+  font-size: 18px; /* 增大文字大小 */
+  text-decoration: none; /* 移除下划线 */
+  transition: background-color 0.3s; /* 添加背景颜色变化的过渡效果 */
+  flex-direction: column; /* 设置flex方向为列，如果不需要可以移除 */
+}
