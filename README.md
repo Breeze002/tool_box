@@ -16,7 +16,11 @@ Our Django application, `example` is configured as an installed application in `
 # vercel_app/settings.py
 INSTALLED_APPS = [
     # ...
+<<<<<<< HEAD
     'tool_box',
+=======
+    'example',
+>>>>>>> 8f14ec5e23e0070669c63959aedfcafd3386a102
 ]
 ```
 
@@ -44,7 +48,11 @@ WSGI_APPLICATION = 'vercel_app.wsgi.app'
 There is a single view which renders the current time in `example/views.py`:
 
 ```python
+<<<<<<< HEAD
 # tool_box/views.py
+=======
+# example/views.py
+>>>>>>> 8f14ec5e23e0070669c63959aedfcafd3386a102
 from datetime import datetime
 
 from django.http import HttpResponse
@@ -66,10 +74,17 @@ def index(request):
 This view is exposed a URL through `example/urls.py`:
 
 ```python
+<<<<<<< HEAD
 # tool_box/urls.py
 from django.urls import path
 
 from tool_box.views import index
+=======
+# example/urls.py
+from django.urls import path
+
+from example.views import index
+>>>>>>> 8f14ec5e23e0070669c63959aedfcafd3386a102
 
 
 urlpatterns = [
@@ -85,7 +100,11 @@ from django.urls import path, include
 
 urlpatterns = [
     ...
+<<<<<<< HEAD
     path('', include('tool_box.urls')),
+=======
+    path('', include('example.urls')),
+>>>>>>> 8f14ec5e23e0070669c63959aedfcafd3386a102
 ]
 ```
 
